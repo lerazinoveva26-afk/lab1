@@ -1,9 +1,9 @@
 def num(inp, flag=False):
     while True:
         try:
-            if flag:                    # Если flag=True - возвращает целое число
+            if flag:
                 return int(input(inp))
-            else:                       # Если flag=False (по умолчанию) - возвращает дробное число
+            else:
                 return float(input(inp))
         except ValueError:
             print("\nВведите корректное число!")
